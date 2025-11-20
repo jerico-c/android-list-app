@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.BreakingBadApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bb_orange</item>
+        <item name="colorPrimaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnPrimary">@color/bb_white</item>
+
+        <item name="colorSecondary">@color/bb_orange</item>
+        <item name="colorSecondaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnSecondary">@color/bb_black</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="android:windowBackground">@color/bb_light_background</item>
+        <item name="android:textColor">@color/bb_light_text_primary</item>
+        <item name="android:textColorSecondary">@color/bb_light_text_secondary</item>
+    </style>
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bb_black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.BreakingBadApp</item>
+    </style>
+
+    <style name="Theme.BreakingBadApp.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bb_orange</item>
+        <item name="colorPrimaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnPrimary">@color/bb_white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="android:windowBackground">@color/bb_light_background</item>
+    </style>
+
+</resources>

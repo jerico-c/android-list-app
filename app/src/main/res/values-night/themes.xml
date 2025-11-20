@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.BreakingBadApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bb_orange</item>
+        <item name="colorPrimaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnPrimary">@color/bb_white</item>
+
+        <item name="colorSecondary">@color/bb_orange</item>
+        <item name="colorSecondaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnSecondary">@color/bb_black</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="android:windowBackground">@color/bb_black</item>
+        <item name="android:textColor">@color/bb_white</item>
+        <item name="android:textColorSecondary">@color/bb_light_grey</item>
+    </style>
+
+    <style name="Theme.BreakingBadApp.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bb_orange</item>
+        <item name="colorPrimaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnPrimary">@color/bb_white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="android:windowBackground">@color/bb_black</item>
+    </style>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:id="@+id/img_detail_photo"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_detail_photo"
+            tools:text="Character Name" />
+
+        <TextView
+            android:id="@+id/tv_job_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Job:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_name" />
+
+        <TextView
+            android:id="@+id/tv_detail_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_job_label"
+            app:layout_constraintEnd_toEndOf="@id/tv_detail_name"
+            app:layout_constraintStart_toEndOf="@id/tv_job_label"
+            tools:text="High School Chemistry Teacher" />
+
+        <TextView
+            android:id="@+id/tv_affiliation_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Affiliation:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_job_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_job" />
+
+        <TextView
+            android:id="@+id/tv_detail_affiliation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_affiliation_label"
+            app:layout_constraintEnd_toEndOf="@id/tv_detail_job"
+            app:layout_constraintStart_toEndOf="@id/tv_affiliation_label"
+            tools:text="Los Pollos Hermanos" />
+
+        <TextView
+            android:id="@+id/tv_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Overview"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_affiliation_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_affiliation" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_detail_name"
+            app:layout_constraintStart_toStartOf="@id/tv_description_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_label"
+            tools:text="Long description of the character goes here..." />
+
+        <Button
+            android:id="@+id/action_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Share"
+            app:layout_constraintEnd_toEndOf="@id/tv_detail_description"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_description"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
