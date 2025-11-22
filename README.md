@@ -58,10 +58,5 @@ Sesuai dengan kriteria penilaian (Bintang 5), aplikasi ini memiliki fitur beriku
 3.  Biarkan Gradle melakukan sinkronisasi (*Sync Project*).
 4.  Jalankan aplikasi pada Emulator atau Perangkat Android fisik.
 
-## 👤 Profil Pengembang
-
-* **Nama:** [Nama Anda Sesuai Dicoding]
-* **Email:** [Email Anda Sesuai Dicoding]
-* **Dicoding Profile:** [Link Profil Dicoding Anda]
 
 ---
