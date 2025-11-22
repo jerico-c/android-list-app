@@ -39,7 +39,6 @@ Sesuai dengan kriteria penilaian (Bintang 5), aplikasi ini memiliki fitur beriku
 |:---:|:---:|:---:|:---:|
 | <img src="path/to/screenshot_splash.png" width="180" /> | <img src="path/to/screenshot_home.png" width="180" /> | <img src="path/to/screenshot_detail.png" width="180" /> | <img src="path/to/screenshot_about.png" width="180" /> |
 
-*(Catatan: Ganti `path/to/...` dengan lokasi gambar screenshot Anda di folder proyek)*
 
 ## 📂 Struktur Proyek
 
